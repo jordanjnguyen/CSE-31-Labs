@@ -1,0 +1,34 @@
+Test 1
+	Price:				4
+	# Wrappers: 		8
+	Money to spend: 	10
+	Expected outcome: 	2
+	Works?				yes
+	
+Test 2
+	Price:				2
+	# Wrappers: 		6
+	Money to spend: 	20
+	Expected outcome: 	11
+	Works?				yes
+	
+Test 3
+	Price:				2
+	# Wrappers: 		4
+	Money to spend: 	30
+	Expected outcome: 	18
+	Works?				yes
+	
+Test 4
+	Price:				1
+	# Wrappers: 		3
+	Money to spend: 	10
+	Expected outcome: 	14
+	Works?				yes
+	
+Test 5
+	Price:				37
+	# Wrappers: 		2
+	Money to spend: 	118
+	Expected outcome: 	4
+	Works?				yes
