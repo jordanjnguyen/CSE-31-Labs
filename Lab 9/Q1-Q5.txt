@@ -1,0 +1,19 @@
+Q1-Q5
+
+1. For negative 1 you have to print the negative sign and then one. For positive one you can just print "1".
+
+2. Absolute Value
+
+3. 
+int main (int a) {
+    if (a==0) {
+        return 0;
+    }
+	else  {
+        return mystery(a) + mystery(a-1);
+    }
+}
+
+4. 127
+
+5. Overflow

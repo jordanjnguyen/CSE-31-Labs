@@ -1,0 +1,17 @@
+Q1-Q2
+
+Q1. If temp was already the value at the top of the stack.
+Q2. In proc we set a variable to 0 so that when temp is is dereferenced it is zero. This will guarantee the crash because adress zero does not exist.
+
+2 lines of chanes from swap1 to swap2
+
+To crash temp must be 0. Force seg fault. no address zero. temp is a pointer that countains address
+anytime you define a variable, you strore in stack. when you free somethin it is zero
+
+nchoose k:
+push all save as reisters to stack
+call them back when they were done, jump back to ra. chane stack pointer
+
+first1posv1.s
+shift a0 to the right, have counter
+if a0 is zero, terminate program

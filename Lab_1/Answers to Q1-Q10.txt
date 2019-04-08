@@ -1,0 +1,22 @@
+1. What does the -c flag do in gcc?
+   		-c compiles the program without giving the program's output
+2. What does the -o flag do in gcc?
+		-o compiles and gives the program's output
+3. How do you load output0 into gdb?
+		gcc -g -o out outpuut0.c
+		gdb ./out
+4. How do you set breakpoint in main
+		(gdb) break output0.c:6
+5. Command to run output0 inside gdb
+		(gdb) run
+6. Command to single-step through the program
+		(gdb) s
+7. First output gives the value of the most significant bit (MSB) of an unsigned int. What is the size (# of bits) of an unsigned int?
+		16 bits
+8. Second output gives the value of a long long int. What is the size of a long long?
+		64 bits
+9. Third output shows the most negative signed int. Is the size of a signed int
+the same as an unsigned int?
+		Yes, they are the same/
+10. Fourth line shows the value of the most negative valueʼs negation, ie – most_negative_number. What is the output and the reason for the value to be this way? (Hint: remember the property of 2ʼs complement representation)
+		The output is -2147483648. The reason the value is this is still negitive because there is no positive 2147483648. 

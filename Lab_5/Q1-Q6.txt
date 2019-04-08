@@ -1,0 +1,11 @@
+Q1. These directives are used to initialize a variable. .data and .text separate assembly language instructions and variable declarations. .word allocates space for the variable.
+
+Q2. To set a breakpoint go to the execute tab and select a breakpoint checkmark on the left. When you set a breakpoint at line 15 it makes an endless loop in the code.
+
+Q3. You can continue your code by pressing the big green button with the arrow. To step through the code you press the green button with the 1 subscript.
+
+Q4. Contents of registers are in a table to the right. You can modify the values of the registers by double clicking on them and entering your desired value. 
+
+Q5. n is stored at adress 10010000. The 13th fibbinocci number is 233
+
+Q6. It is a system call and it is used for inputs and outputs. To use it, you must load an integer into register $v0 and then use the command "syscall". Sycall also terminates the program.

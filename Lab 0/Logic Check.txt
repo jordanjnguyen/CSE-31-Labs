@@ -1,0 +1,3 @@
+1. If you want to run your file you can use ./main or ./cselab
+2. You can compile but you cant run your code
+3. To comment you use /* comment */

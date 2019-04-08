@@ -1,0 +1,59 @@
+Q1-Q8
+
+Q1. Two Bugs
+Q2. To fix the first bug you have to increment by 4 instead of 1 in lines 14 and 15. To fix the second bug stop the code from incrementing the number of copies for zero add a branch if not equal statement in line 12.
+Q3. To debug I followed the code line by line and added breakpoints.
+Q4. source is stored in register 9.
+Q5. dest is stored in register 10.
+Q6. la (load address)
+Q7. line 34.
+Q8. 
+	Line 34: 
+		Instruction : $L6:
+		Purpose : Marks the start of the loop.
+		Corresponding C : { //first bracket in for loop. 
+	Line 35:
+		Instruction : addu	$8,$8,1 
+		Purpose :  Add one to register 8
+		Corresponding C : x = x + 1;
+	Line 36:
+		Instruction : sll $3,$8,2 
+		Purpose : shift left logical. shift register 8 left 2 bits and fill with zeros. Store new in register 3.
+		Corresponding C : &rThree = &(rEight-2);
+						  rThree = *rEight;
+	Line 37:
+		Instruction : addu $5,$7,$9
+		Purpose : Add $7 and $9. store in $5
+		Corresponding C : rFive = rSeven + rNine;
+	Line 38:
+		Instruction : addu $2,$3,$9
+		Purpose : Add $3 and $9. Store in $5
+		Corresponding C : rTwo = rThree + rNine;
+	Line 39:
+		Instruction : addu $6,$7,$10 
+		Purpose : Add $7 and $10. Store in $6
+		Corresponding C : rSix = rSeven + rTen;
+	Line 40:
+		Instruction : lw $4,0($2) 
+		Purpose : Take value stored at register 2 and save in register 4. 
+		Corresponding C : rFour = *rTwo;
+	Line 41:
+		Instruction : move $7,$3
+		Purpose : Copies value of register 3 to register 7.
+		Corresponding C : rSeven = *rThree;
+	Line 42:
+		Instruction : lw $3,0($5) 
+		Purpose : Take value at address of register five and save to register 3 
+		Corresponding C : rThree = *rFive;
+	Line 43:
+		Instruction : #nop  
+		Purpose : comment
+		Corresponding C : //noop
+	Line 44:
+		Instruction : sw $3,0($6) 
+		Purpose : Store the value of register three into the memory address that register 6 points to.
+		Corresponding C : *rSix = *rThree
+	Line 45:
+		Instruction : bne $4,$0,$L6 
+		Purpose : if register four and register zero are not equal, jump to $L6
+		Corresponding C :  while(rFour != rZero) {
